@@ -1,0 +1,60 @@
+{
+    "id": "1",
+    "quizName": "neu",
+    "questions": [
+        {
+            "id": "jasd3r34g44",
+            "title": "Mit welcher Tiergruppe sind die Dinosaurier am engsten verwandt?",
+            "a1": "Vögel",
+            "a2": "Eidechsen",
+            "a3": "Alligatoren",
+            "a4": "Ameisen", 
+            "correct": 1
+        },
+        {
+            "id": "1blablabla",
+            "title": "Was bedeutet das lateinische “carpe diem”?",
+            "a1": "Genieße das Leben",
+            "a2": "Nutze den Tag",
+            "a3": "Dein Tag wird toll werden",
+            "a4": "Man sieht sich immer zweimal im Leben",
+            "correct": 2
+        },
+        {
+            "id": "2blablabla",
+            "title": "Welches Metall leitet Wärme am besten?",
+            "a1": "Silber",
+            "a2": "Diamant",
+            "a3": "Gold",
+            "a4": "Aluminium",
+            "correct": 1
+        },
+        {
+            "id": "bcc32d1f-53fa-4380-99ac-f9bbeaf353b6",
+            "title": "Wie lautet der zweite Planet in unserem Sonnensystem?",
+            "a1": "Jupiter",
+            "a2": "Mars",
+            "a3": "Erde",
+            "a4": "Venus",
+            "correct": 4
+        },
+        {
+            "id": "1a03ab15-d196-42f6-988e-cdfdcafe15d8",
+            "title": "Welches dieser Tiere hält keinen Winterschlaf?",
+            "a1": "Fledermaus",
+            "a2": "Eichhörnchen",
+            "a3": "Siebenschläfer",
+            "a4": "Igel",
+            "correct": 2
+        },
+        {
+            "id": "7c729912-8ee5-499d-a4da-2d2c45b67fb0",
+            "title": "Wie viele Atemzüge nimmt der menschliche Körper täglich?",
+            "a1": "20,000",
+            "a2": "10,000",
+            "a3": "50,000",
+            "a4": "30,000",
+            "correct": 1
+        }
+    ]
+}

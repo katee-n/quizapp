@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> Quiz läuft</ion-title>
+    <ion-buttons slot="end">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="container" *ngIf="mode == 'start'">
+    <h2>Starte jetzt dein Quiz!</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, suscipit?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, suscipit?</p>
+    
+    <ion-button shape="round" color="primary" expand="block" (click)="startQuiz()">
+      Start
+    </ion-button>
+  </div>
+
+  <div id="container" *ngIf="mode == 'game'">
+    <h2>Frage {{data.counter+1}}/{{data.currentQuiz.questions.length}} </h2>
+      <p>{{getCurrentQuestion().title}}</p>
+      
+      <ion-button shape="round" expand="block"  (click)="loginAnswer(1)" [color]="buttonStyles[0]">
+        {{getCurrentQuestion().a1}}
+      </ion-button>
+      <ion-button shape="round" expand="block"  (click)="loginAnswer(2)" [color]="buttonStyles[1]">
+        {{getCurrentQuestion().a2}}
+      </ion-button>
+      <ion-button shape="round" expand="block" (click)="loginAnswer(3)"  [color]="buttonStyles[2]">
+        {{getCurrentQuestion().a3}}
+      </ion-button>
+      <ion-button shape="round" expand="block"  (click)="loginAnswer(4)" [color]="buttonStyles[3]">
+        {{getCurrentQuestion().a4}}
+      </ion-button>
+    
+    <br>
+    <br>
+    <ion-button *ngIf="checkPressed == false" shape="round" fill="outline" color="primary" expand="block" (click)="checkAnswer()">
+      Check
+    </ion-button>
+    <ion-button *ngIf="checkPressed == true" shape="round" fill="outline" color="secondary" expand="block"(click)="getNextQuestion()">
+      Next
+    </ion-button>
+  </div>
+
+
+    <div id="container" *ngIf="mode == 'end'">
+        <p>Du hast {{data.rightOnes}}/{{data.currentQuiz.questions.length}} Fragen richtig beantwortet!</p>
+        <ion-button shape="round" color="primary" expand="block" (click)="startQuiz()">
+          Nochmal spielen
+        </ion-button>
+        <ion-button shape="round" color="secondary" expand="block" (click)="goToStart()">
+          Zurück zum Start
+        </ion-button>
+      </div>
+
+</ion-content>

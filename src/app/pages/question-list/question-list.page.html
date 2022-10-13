@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> Alle Fragen</ion-title>
+    <ion-buttons slot="end">
+      <ion-button icon-only (click)="showNew()">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor="let q of data.currentQuiz.questions">
+      <ion-item  (click)="show(q)">
+        {{q.title}}
+      </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="danger" (click)="delete(q)">
+              Delete
+          </ion-item-option>
+        </ion-item-options>
+      
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

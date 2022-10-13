@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Dein Fragebogen
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">WissensApp</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+      <h1>Willkommen beim großen Wissensquiz!</h1>
+      <br>
+      <p>Hier kannst du anhand {{data.currentQuiz.questions.length}} Fragen dein Wissen in Allgemeinwissen testen.</p>
+      <strong>Viel Glück!</strong>
+      <br>
+      <br>
+      <ion-button shape="round" color="primary" expand="block" (click)="showList()">
+        Fragen bearbeiten
+      </ion-button>
+      <br>
+      <ion-button shape="round" color="secondary" expand="block" (click)="showTest()">
+        Quiz starten
+      </ion-button>
+      <ion-button shape="round" color="secondary" expand="block" (click)="data.loadFromWebService()">
+        Fragen von Web laden
+      </ion-button>
+
+
+   </div>
+</ion-content>

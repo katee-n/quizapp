@@ -1,0 +1,7 @@
+{
+  "name": "fragebogen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
